@@ -2,7 +2,7 @@ import { Colors } from '@/constants/Colors';
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import Background from './../../components/Background';
-import { useFontSize } from './../../components/FontSizeProvider'; // Adjust path as necessary
+import { useFontSize } from './../../components/FontSizeProvider'; 
 import SongHeader from './../../components/SongHeader';
 
 const SongLyric = ({ route }) => {
