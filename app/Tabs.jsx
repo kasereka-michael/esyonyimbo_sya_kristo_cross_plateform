@@ -9,7 +9,7 @@ import { SearchProvider } from './../components/SearchContext';
 import Favorites from './Favorite';
 import HomeScreen from './Home';
 import Settings from './Settings';
-import { FontSizeProvider } from './../components/FontSizeProvider';
+
 
 
 const Tab = createBottomTabNavigator();
@@ -33,7 +33,7 @@ const Tabs = () => {
           name="songList"
           component={HomeScreen}
           options={{
-            tabBarIcon: ({ color }) => <Ionicons name="list" size={30} color={color} />,
+            tabBarIcon: ({ color }) => <Ionicons name="list" size={25} color={color} />,
             header: () => <CustomHeader />,
             lazy: true
           }}
@@ -42,7 +42,7 @@ const Tabs = () => {
           name="Favorites"
           component={Favorites}
           options={{
-            tabBarIcon: ({ color }) => <Fontisto name="heart" size={30} color={color} />,
+            tabBarIcon: ({ color }) => <Fontisto name="heart" size={25} color={color} />,
             tabBarLabel:"ESYANZIRWE",
             header: () => 
             <View style={styles.headerContainer}>
@@ -57,7 +57,7 @@ const Tabs = () => {
           name="Settings"
           component={Settings}
           options={{
-            tabBarIcon: ({ color }) => <Ionicons name="settings" size={30} color={color} />,
+            tabBarIcon: ({ color }) => <Ionicons name="settings" size={25} color={color} />,
             header: () =>null,
             lazy: true
           }}
@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   tabBar: {
-    height: hp(5),
-    paddingBottom: 5, 
+    height: hp(4),
+    paddingBottom: 0, 
   },
   tabBarLabel: {
     fontSize: 14,

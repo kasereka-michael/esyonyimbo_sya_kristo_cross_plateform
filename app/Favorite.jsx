@@ -59,6 +59,7 @@ const Favorite = () => {
   }, [debouncedSyncFavorites]);
 
   const handlePress = useCallback((item) => {
+    console.log('Navigating to SongLyric with item:', item);
     navigation.navigate('songLyric', { item });
   }, [navigation]);
 
@@ -168,7 +169,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   title: {
-    fontSize: wp('4%'),
+    fontSize: wp('3.8%'),
     color: '#333',
     fontWeight: '500',
   },

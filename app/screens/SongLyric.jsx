@@ -1,29 +1,38 @@
 import { Colors } from '@/constants/Colors';
 import React from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
+import * as Clipboard from 'expo-clipboard';
 import Background from './../../components/Background';
-import { useFontSize } from './../../components/FontSizeProvider'; 
+import { useFontSize } from './../../components/FontSizeProvider'; // Adjust path as necessary
 import SongHeader from './../../components/SongHeader';
 
 const SongLyric = ({ route }) => {
   const { item } = route.params;
   const { fontSize }  = useFontSize(); 
 
+  const copyToClipboard = (content) => {
+    Clipboard.setStringAsync(content);
+    Alert.alert("Copied to Clipboard", "The verse has been copied to your clipboard.");
+  };
+
   const renderVerse = ({ item: verse, index }) => (
-    <View style={styles.verseContainer}>
-      <Text style={[styles.lyricTitle, { fontSize: fontSize + 2 }]}>
+    <TouchableOpacity 
+      onLongPress={() => copyToClipboard(verse.content)}
+      style={styles.verseContainer}
+    >
+      <Text style={[styles.lyricTitle, { fontSize: Colors.FONTSIZELYRIC + 2 }]}>
         {verse.title}:
       </Text>
-      <Text style={[styles.lyrics, { fontSize: fontSize }]}>{verse.content}</Text>
+      <Text style={[styles.lyrics, { fontSize: Colors.FONTSIZELYRIC }]}>{verse.content}</Text>
       {item.songLyric.chorus && (
         <View style={styles.chorusContainer}>
-          <Text style={[styles.lyricTitle, { fontSize: fontSize + 2 }]}>
+          <Text style={[styles.lyricTitle, { fontSize: Colors.FONTSIZELYRIC + 2 }]}>
             Chorus:
           </Text>
-          <Text style={[styles.lyrics, { fontSize: fontSize }]}>{item.songLyric.chorus}</Text>
+          <Text style={[styles.lyrics, { fontSize: Colors.FONTSIZELYRIC }]}>{item.songLyric.chorus}</Text>
         </View>
       )}
-    </View>
+    </TouchableOpacity>
   );
 
   const verses = Object.entries(item.songLyric)
@@ -118,11 +127,13 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     fontFamily: 'outfit-medium',
     color: Colors.TEXT_PRIMARY,
+    fontSize: Colors.FONTSIZELYRIC,
   },
   lyrics: {
     color: Colors.TEXT_PRIMARY,
     lineHeight: 24,
     fontFamily: 'outfit-regular',
+    fontSize: Colors.FONTSIZELYRIC,
   },
 });
 

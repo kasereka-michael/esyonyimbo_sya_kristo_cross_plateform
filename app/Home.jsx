@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.BACKGROUND,
-    paddingHorizontal: wp('4%'),
+    paddingHorizontal: wp('1%'),
     paddingTop:10,
   },
   list: {
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   title: {
-    fontSize: wp('4%'),
+    fontSize: wp('3.8%'),
     color: Colors.TITLE_TEXT,
     fontWeight: '500',
     flex: 1,

@@ -185,7 +185,7 @@ const SongHeader = ({ item }) => {
       let favoriteSongs = favorites ? JSON.parse(favorites) : [];
 
       if (!likeIcon) {
-        favoriteSongs = [...favoriteSongs, { id: item.id, title: item.title }];
+        favoriteSongs = [...favoriteSongs, item ]; // to be changed
         console.log('Added to favorites:', item);
       } else {
         favoriteSongs = favoriteSongs.filter(song => song.id !== item.id);

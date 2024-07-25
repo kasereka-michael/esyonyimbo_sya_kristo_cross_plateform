@@ -1,8 +1,8 @@
 import { Colors } from '@/constants/Colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Slider from '@react-native-community/slider';
-import React, { useEffect, useState } from 'react';
-import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import Background from '../components/Background';
 
 const ExpandableSection = ({ title, content }) => {
@@ -24,6 +24,7 @@ const Settings = () => {
   const [fontSize, setFontSize] = useState(Colors.FONTSIZELYRIC);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [message, setMessage] = useState('');
+  const [submissionStatus, setSubmissionStatus] = useState('');
 
   useEffect(() => {
     const loadSettings = async () => {
@@ -37,6 +38,7 @@ const Settings = () => {
 
         const savedDarkMode = await AsyncStorage.getItem('darkMode');
         if (savedDarkMode !== null) {
+          savedDarkMode = Colors.light;
           setIsDarkMode(JSON.parse(savedDarkMode));
         }
       } catch (error) {
@@ -50,6 +52,7 @@ const Settings = () => {
   const handleFontSizeChange = async (value) => {
     setFontSize(value);
     Colors.FONTSIZELYRIC = value;
+    console.log("this is the value "+ Colors.FONTSIZELYRIC);
     try {
       await AsyncStorage.setItem('fontSize', value.toString());
     } catch (error) {
@@ -64,6 +67,49 @@ const Settings = () => {
       await AsyncStorage.setItem('darkMode', JSON.stringify(newMode));
     } catch (error) {
       console.error('Error saving dark mode preference:', error);
+    }
+  };
+
+  const handleSubmit = async () => {
+    const formData = new FormData();
+    formData.append('message', message);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xeojewpv', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        setSubmissionStatus('Thanks for your message!');
+        setMessage('');
+        setTimeout(() => {
+          setSubmissionStatus('');
+        }, 5000);
+      } else {
+        setSubmissionStatus('Oops! There was a problem submitting your form.');
+        setTimeout(() => {
+          setSubmissionStatus('');
+        }, 5000);
+      }
+    } catch (error) {
+      setSubmissionStatus('Oops! There was a problem submitting your form.');
+      setTimeout(() => {
+        setSubmissionStatus('');
+      }, 5000);
+    }
+  };
+
+  const handleShare = async () => {
+    try {
+      await Share.share({
+        message: 'Check out the ESYONYIMBO SYAKRISTO app!',
+      });
+    } catch (error) {
+      console.error('Error sharing the app:', error);
     }
   };
 
@@ -95,12 +141,17 @@ const Settings = () => {
                     thumbTintColor={Colors.PRIMARY}
                   />
                 </View>
-                <TouchableOpacity
-                  style={[styles.modeButton, isDarkMode && styles.modeButtonActive]}
-                  onPress={toggleDarkMode}
-                >
-                  <Text style={styles.modeButtonText}>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</Text>
-                </TouchableOpacity>
+                <View style={styles.buttonContainer}> 
+                      <TouchableOpacity
+                        style={[styles.modeButton, isDarkMode && styles.modeButtonActive]}
+                        onPress={toggleDarkMode}
+                      >
+                        <Text style={styles.modeButtonText}>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</Text>
+                      </TouchableOpacity>
+                      <TouchableOpacity style={styles.shareButton} onPress={handleShare}>
+                      <Text style={styles.shareButtonText}>Share This App</Text>
+                    </TouchableOpacity>
+              </View>
               </View>
 
               <View style={styles.card}>
@@ -123,12 +174,15 @@ const Settings = () => {
                   value={message}
                   onChangeText={setMessage}
                   placeholder="Your message here"
-                  placeholderTextColor={isDarkMode ? Colors.DARK_PLACEHOLDER : Colors.LIGHT_PLACEHOLDER}
+                  placeholderTextColor={isDarkMode ? Colors.APP_BACKGROUND : Colors.GRAY}
                   multiline
                 />
-                <TouchableOpacity style={[styles.button, { backgroundColor: isDarkMode ? Colors.DARK_BUTTON : Colors.LIGHT_BUTTON }]} onPress={() => {/* Implement send message functionality */}}>
+                <TouchableOpacity style={[styles.button, { backgroundColor: isDarkMode ? Colors.DARK_BUTTON : Colors.LIGHT_BUTTON }]} onPress={handleSubmit}>
                   <Text style={styles.buttonText}>Send Message</Text>
                 </TouchableOpacity>
+                {submissionStatus !== '' && (
+                  <Text style={styles.successMessage}>{submissionStatus}</Text>
+                )}
               </View>
             </View>
           </TouchableWithoutFeedback>
@@ -150,7 +204,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '700',
     textAlign: 'center',
     marginBottom: 10,
@@ -162,7 +216,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.APP_BACKGROUND,
     borderRadius: 10,
     padding: 15,
     marginBottom: 20,
@@ -185,7 +239,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   subText: {
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 5,
   },
   slider: {
@@ -194,35 +248,51 @@ const styles = StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: Colors.GRAY,
     borderRadius: 5,
     padding: 10,
     marginBottom: 10,
     height: 100,
+    color:Colors.GRAY,
   },
   button: {
     padding: 15,
-    borderRadius: 5,
+    borderRadius: 10,
+    backgroundColor: Colors.PRIMARY,
     alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius:20,
   },
   buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '600',
+    marginTop: 20,
+    padding: 15,
+    borderRadius: 10,
+    backgroundColor: Colors.PRIMARY,
+    alignItems: 'center',
+    justifyContent: 'center',
+    color:Colors.APP_BACKGROUND,
+    
+    borderRadius:20,
+  },
+  successMessage: {
+    color: 'green',
+    textAlign: 'center',
+    marginTop: 10,
   },
   modeButton: {
-    backgroundColor: '#eee',
-    padding: 10,
-    borderRadius: 20,
-    width: 100,
+    marginTop: 20,
+    padding: 15,
+    borderRadius: 10,
+    backgroundColor: Colors.PRIMARY,
     alignItems: 'center',
-    marginVertical: 10,
+    justifyContent: 'center',
   },
   modeButtonActive: {
-    backgroundColor: Colors.BACKGROUNDCOLOR,
+    backgroundColor: Colors.BACKGROUND,
   },
   modeButtonText: {
     fontWeight: '600',
+    color:Colors.APP_BACKGROUND,
   },
   expandableContainer: {
     marginTop: 10,
@@ -234,6 +304,26 @@ const styles = StyleSheet.create({
   expandableContent: {
     marginTop: 5,
     fontSize: 14,
+  },
+  buttonContainer:{
+    display:'flex',
+    justifyContent:'center',
+    flexDirection:'row',
+    alignItems:'center',
+    gap:30,
+  },
+  shareButton: {
+    marginTop: 20,
+    padding: 15,
+    borderRadius: 10,
+    backgroundColor: Colors.PRIMARY,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  shareButtonText: {
+    fontSize: 16,
+    color: Colors.APP_BACKGROUND,
+    fontWeight: '',
   },
 });
 
