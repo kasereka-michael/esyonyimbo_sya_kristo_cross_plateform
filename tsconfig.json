@@ -12,6 +12,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.mid",
+    "**/*.m4a",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
 , "components/FontSizeProvider.js"  ]

@@ -2090,7 +2090,7 @@
     "musicKey": "Doh is Eb",
     "songLyric": {
         "verse1": "Erighesa ry’ahisi ryamahika, Yesu akabirikir’abaghesi, Lebay’amalima amer’ehosi, Mulete emitemi muyaghese.",
-        "chorus": " S:        \t Mukole, luba, mubik’emighanda \t\t Mukole, luba, Imwasa A.T.B: \t Mukole luba mwase, imwasa, \t\t Muhunik’emighanda, imwasa. \t\t Mukole luba mwase, imwasa, \t\t Imwasa luba.",
+        "chorus": " S:        \t Mukole, luba, mubik’emighanda \t\t Mukole, luba, Imwasa \nA.T.B: \t Mukole luba mwase, imwasa,\n Muhunik’emighanda, imwasa.\nMukole luba mwase, imwasa, Imwasa luba.",
         "verse2": "Ekirw’ekyo sihabye ukalira, Uyiteghaye omo ngyakya syosi, Emighulu yalabir’erihunga, Mukole luba mbula yite yawa.",
         "verse3": "Lwanzo luli ng’eyisoko yityuma, Lukalwa elubul’oko Mutoki, Lo lukatulembera erikola, Ilwatusikya situbye baghata."
     }

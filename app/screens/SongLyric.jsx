@@ -3,7 +3,7 @@ import * as Clipboard from 'expo-clipboard';
 import React from 'react';
 import { Alert, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Background from './../../components/Background';
-import { useFontSize } from './../../components/FontSizeProvider'; // Adjust path as necessary
+import { useFontSize } from './../../components/FontSizeProvider';
 import SongHeader from './../../components/SongHeader';
 
 const SongLyric = ({ route }) => {
