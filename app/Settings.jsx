@@ -4,6 +4,7 @@ import Slider from '@react-native-community/slider';
 import { useEffect, useState } from 'react';
 import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import Background from '../components/Background';
+import EmailLink from '../components/MailTo'
 
 const ExpandableSection = ({ title, content }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -38,7 +39,6 @@ const Settings = () => {
 
         const savedDarkMode = await AsyncStorage.getItem('darkMode');
         if (savedDarkMode !== null) {
-          savedDarkMode = Colors.light;
           setIsDarkMode(JSON.parse(savedDarkMode));
         }
       } catch (error) {
@@ -62,6 +62,8 @@ const Settings = () => {
 
   const toggleDarkMode = async () => {
     const newMode = !isDarkMode;
+    Colors.BACKGROUND = isDarkMode ? Colors.APP_BACKGROUND : Colors.BACKGROUNDCOLOR;
+   console.log(Colors.BACKGROUND);
     setIsDarkMode(newMode);
     try {
       await AsyncStorage.setItem('darkMode', JSON.stringify(newMode));
@@ -106,7 +108,7 @@ const Settings = () => {
   const handleShare = async () => {
     try {
       await Share.share({
-        message: 'Check out the ESYONYIMBO SYAKRISTO app!',
+        message: 'Check out the ESYONYIMBO SYA KRISTO app!',
       });
     } catch (error) {
       console.error('Error sharing the app:', error);
@@ -121,7 +123,7 @@ const Settings = () => {
       >
         <ScrollView contentContainerStyle={styles.scrollView}>
           <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-            <View style={[styles.container, { backgroundColor: isDarkMode ? Colors.DARK_BACKGROUND : Colors.LIGHT_BACKGROUND }]}>
+            <View style={[styles.container, { backgroundColor: isDarkMode ? Colors.DARK_BACKGROUND : Colors.APP_BACKGROUND }]}>
               <Text style={[styles.title, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>ESYONYIMBO SYAKRISTO</Text>
               <Text style={[styles.settings, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Settings</Text>
 
@@ -156,17 +158,35 @@ const Settings = () => {
 
               <View style={styles.card}>
                 <Text style={[styles.cardTitle, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>About</Text>
-                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Developed by Kasereka Michael</Text>
-                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Phone: +250 785 587 497</Text>
-                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Phone: +243 785 587 497</Text>
-                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Email: Kaserekamichael23526@gmail.com</Text>
+                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Developed by MUHINDO MBAVULIKIRA HERITIER</Text>
+                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Phone: +243 829 267 467</Text>
+                <EmailLink/>
 
                 <ExpandableSection 
                   title="Special Thanks"
-                  content="MZEE LUVATSUNGANA DIEUDONNE • KAVUHO MUNYOMI OPRAH • Dr OSEE MASIVI • MICHAEL JAZZIRY • GLOIRE NDUNGO VAGHENI • OSEE KAMBALE KYAVU • TRESOR NZALAMINGI • GIDEON MAHILI • VERDA MBAVULIKIRA • GUY KALETU • WILSON MUHASA • VENAH KISUNZU • HON. NZANGI BUTONDO • DANIEL MUTHAVALY • BIENFAIT KAVATSI • Dr NATHANIEL MUMBERE WALEMBA • FISTON SAHIKA • MAPENDO SIVIHWA • Dr MUNAKENYA • PASCANET STUDIOZ • ISAAC MWENDAMBIYO"
+                  content="
+                  • MZEE LUVATSUNGANA DIEUDONNE 
+                  • KAVUHO MUNYOMI OPRAH 
+                  • Dr OSEE MASIVI 
+                  • GLOIRE NDUNGO VAGHENI 
+                  • OSEE KAMBALE KYAVU 
+                  • TRESOR NZALAMINGI 
+                  • GIDEON MAHILI 
+                  • VERDA MBAVULIKIRA 
+                  • GUY KALETU 
+                  • WILSON MUHASA 
+                  • VENAH KISUNZU 
+                  • HON. NZANGI BUTONDO 
+                  • DANIEL MUTHAVALY 
+                  • BIENFAIT KAVATSI 
+                  • Dr NATHANIEL MUMBERE WALEMBA 
+                  • FISTON SAHIKA 
+                  • MAPENDO SIVIHWA 
+                  • Dr MUNAKENYA 
+                  • PASCANET STUDIOZ 
+                  • ISAAC MWENDAMBIYO"
                 />
               </View>
-
               <View style={styles.card}>
                 <Text style={[styles.cardTitle, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Feedback</Text>
                 <TextInput
@@ -208,12 +228,14 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     textAlign: 'center',
     marginBottom: 10,
+    fontFamily:'outfit-medium',
   },
   settings: {
     fontSize: 20,
     fontWeight: '500',
     textAlign: 'center',
     marginBottom: 20,
+    fontFamily:'outfit-medium',
   },
   card: {
     backgroundColor: Colors.APP_BACKGROUND,
@@ -230,6 +252,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     marginBottom: 10,
+    fontFamily:'outfit-bold',
   },
   settingItem: {
     marginBottom: 15,
@@ -237,10 +260,12 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     marginBottom: 5,
+    fontFamily:'outfit-medium',
   },
   subText: {
     fontSize: 16,
     marginBottom: 5,
+    fontFamily:'outfit-medium',
   },
   slider: {
     width: '100%',
@@ -253,7 +278,9 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     height: 100,
+    fontSize:Colors.FONTSIZETITLE,
     color:Colors.GRAY,
+    fontFamily:'outfit-medium',
   },
   button: {
     padding: 15,
@@ -262,12 +289,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius:20,
+    
   },
   buttonText: {
     marginTop: 20,
     padding: 15,
     borderRadius: 10,
     backgroundColor: Colors.PRIMARY,
+    fontFamily:'outfit-medium',
     alignItems: 'center',
     justifyContent: 'center',
     color:Colors.APP_BACKGROUND,
@@ -278,6 +307,7 @@ const styles = StyleSheet.create({
     color: 'green',
     textAlign: 'center',
     marginTop: 10,
+    fontFamily:'outfit-medium',
   },
   modeButton: {
     marginTop: 20,
@@ -286,6 +316,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.PRIMARY,
     alignItems: 'center',
     justifyContent: 'center',
+    display:'none',
   },
   modeButtonActive: {
     backgroundColor: Colors.BACKGROUND,
@@ -300,6 +331,7 @@ const styles = StyleSheet.create({
   expandableTitle: {
     fontSize: 16,
     fontWeight: '600',
+    fontFamily:'outfit-medium',
   },
   expandableContent: {
     marginTop: 5,
@@ -322,6 +354,7 @@ const styles = StyleSheet.create({
   },
   shareButtonText: {
     fontSize: 16,
+    fontFamily:'outfit-medium',
     color: Colors.APP_BACKGROUND,
     fontWeight: '',
   },

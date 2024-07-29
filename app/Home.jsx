@@ -2,7 +2,7 @@ import { Colors } from '@/constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { memo, useCallback, useEffect, useState } from 'react';
 import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import HymnalData from '../assets/data/lyrics.json';
@@ -59,7 +59,7 @@ const HomeScreen = () => {
     navigation.navigate('songLyric', { item });
   };
 
-  const Item = React.memo(({ item, onPress, isFavorite, onToggleFavorite }) => (
+  const Item = memo(({ item, onPress, isFavorite, onToggleFavorite }) => (
     <View style={styles.item}>
       <TouchableOpacity onPress={onPress} style={styles.itemContent}>
         <View style={styles.numberContainer}>

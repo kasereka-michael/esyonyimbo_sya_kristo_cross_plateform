@@ -282,7 +282,7 @@
       "musicKey": "Doh is G",
       "songLyric": {
         "verse1": "Nasa ku musalaba, Nduhire, mwera, mumu; Sindisagha na hake, Ngasonda iwo wene.",
-        "chorus": "Erisuba mo: Mwami indi n’amahga, Mulamya waghe Mwenge, Nyikangy’embere syawe, Mwami Yesu, nyilamye.",
+        "chorus": "  Mwami indi n’amahga, Mulamya waghe Mwenge, Nyikangy’embere syawe, Mwami Yesu, nyilamye.",
         "verse2": "Nayitsutsa We kera, Mo bulighe bw’ebibi; Yesu mwambwira ati: Asa, Ngakulamaye.",
         "verse3": "Lino nayihaghura, Sinyibuk’ekihugho; Mbye wawe, Mwami Yesu, Imay’ebyaghe byosi.",
         "verse4": "Ndi n’amaha w’ebyawe, Wanywutir’omusasi ; Lino namayikangya, Indi ku Musalaba.",
@@ -297,7 +297,7 @@
       "musicKey": "Doh is G",
       "songLyric": {
         "verse1": "Mwami mb’Omuyisa wawe, Uhitaye gho busa ; We Mulamya sundabe ko, Neryo mba Omuyisa.",
-        "chorus": "Erisuba mo: Muyisa, Muyisa, Nery’umbe Omuyisa.",
+        "chorus": "  Muyisa, Muyisa, Nery’umbe Omuyisa.",
         "verse2": "Sunzighe Tata Mubuya, Ebibi byamanduhya ; Ndolere owerighuswa, Nikwa unyighenyere.",
         "verse3": "Namabulir’omo bibi, Namakuhitaniya; Namatimbwa n’ekihugho, Undusaye mo lino.",
         "verse4": "S’undabe ko Omukama, Nyiribule ameso ; Unyiminyisaye Tata, Nzire eby’ekihugho."
@@ -639,7 +639,7 @@
     "musicKey": "Doh is G",
     "songLyric": {
       "verse1": "Indy’oko musike w’e Yordani, Nasumba ameso, Ndangir’ekihugho kye Kanani, Aho ho byaghe biri.",
-      "chorus": "Erisuba mo: Kihugho kibuya ky’obuholo, Yisiry’oko musike aboyire, Twasyimbira ho esyonyimbo sya Musa; Eribya na Yesu Kristo.",
+      "chorus": "  Kihugho kibuya ky’obuholo, Yisiry’oko musike aboyire, Twasyimbira ho esyonyimbo sya Musa; Eribya na Yesu Kristo.",
       "verse2": "Eyisiry’oko mukokoro, Hali ekyakakala, Yesu Kristo asyaby’ekyakaka kyahighahw’ekiro.",
       "verse3": "Aho howene nasyahikey’ekiro kyahi kwehi, Nasyalangira Tat’omo meso, omo Bwami buwe.",
       "verse4": "Nyitsemire omo mutima, Sinyanzir’eryubaha, Yorodani ikahuha ndeke, Sindyubah’erisoka."
@@ -653,7 +653,7 @@
     "musicKey": "Doh is C",
     "songLyric": {
       "verse1": "Twasyatsem’emibiri yahwa, Abakaghesera Yesu, Bakandisyiky’emiheke, E Yerusalem’eyo.",
-      "chorus": "Erisuba mo: Butseme hasyaby’obutseme, Sibwesyahwa kera na kera. Obutseme buli hakuhi, Tuhindanir’ewetu.",
+      "chorus": "  Butseme hasyaby’obutseme, Sibwesyahwa kera na kera. Obutseme buli hakuhi, Tuhindanir’ewetu.",
       "verse2": "Twasyatsema n’erimwimbira, Twasyabya tupipe Yesu, Rimusima, rimupipa, E Yérusalem’eyo.",
       "verse3": "Twasyatsemera yo kutsibu, Omo syonyumba nyibuya, Yesu abirikokotya E Yerusalem’eyo."
     }
@@ -666,7 +666,7 @@
     "musicKey": "Doh is Bb",
     "songLyric": {
       "verse1": "Namalengekania, Ewetu ni hakuhi, Namaseghera elubula, Ni hakuhi kutsibu.",
-      "chorus": "Erisuba mo: Eyo hakuhi ni hakuhi, Lino ndi hakuhi ye wetu; Nyinemwendihika yo.",
+      "chorus": "  Eyo hakuhi ni hakuhi, Lino ndi hakuhi ye wetu; Nyinemwendihika yo.",
       "verse2": "Omo ngonde sya Tata, Hane yo esyonyumba Syabirihimbwa kera kera, Ew’Ababuyirire.",
       "verse3": "Nasyabya ndi hakuhi, Nasyikya emiheke, Nasyaluhuka omwaghalwa, Nambala erihenia."
     }
@@ -679,7 +679,7 @@
     "musicKey": "Doh is G",
     "songLyric": {
       "verse1": "Iri ekihugho kwowene, Ekya Tata wetu Mubuya Anemukokotya ho wetu, Twasyasiba naye buholo.",
-      "chorus": "Erisuba mo: Twasyahika bolo, Oko Muyi wa Tata wetu, Twasyahindana yo, Oko Muyi mubuya kundu.",
+      "chorus": "  Twasyahika bolo, Oko Muyi wa Tata wetu, Twasyahindana yo, Oko Muyi mubuya kundu.",
       "verse2": "Twasyimba oko Muyi oyo, Esyonyimbo sya Yesu Kristo, Ahate n’obulighe buke, Kutse erilwala amakoni.",
       "verse3": "Wasingya ko Mukama Yesu, Oyo watuholera kera, Wasingya ko Mulamya wetu, Oyo watulusya kw’ebibi."
     }
@@ -931,7 +931,7 @@
     "musicKey": "Doh is F",
     "songLyric": {
       "verse1": "Mughulu Yesu syahindany’Amami, Bahangan’embere siwe; Itwe twasyabya tuti omo mbanza, Kiro ky’eriyateghekwa.",
-      "chorus": "Erisuba mo: Asyahunik’engan’omo kighona, Neryo omusung’asyaghuswa. Itwe twasyabya tuti omo mbanza, Sy’ekiro ky’erilubuka.",
+      "chorus": "  Asyahunik’engan’omo kighona, Neryo omusung’asyaghuswa. Itwe twasyabya tuti omo mbanza, Sy’ekiro ky’erilubuka.",
       "verse2": "Ndindy’asyow’Omulamya abugh’ati: Uli mughombe mubuya, Kutse asyakwa buba abwirw’ambu: Lwa ho, ghenda sinyikwasi.",
       "verse3": "Tuteghaye tulindiriry’Omwami, N’esiseke sinemwaka, Omukwe eghaye itunemuteya, Twe bosi abana buwe."
     }
@@ -944,7 +944,7 @@
     "musicKey": "Doh is Ab",
     "songLyric": {
       "verse1": "Sindikwa engitsi y’efeza n’ezahabu, Nyanzir’eby’elubula, Nyibye n’ababuya. Yesu Mulamya mbwira: Ekitabu kiwe, Kundu ky’Obwami buwe: Nzakirwe mo kwehi?",
-      "chorus": "Erisuba mo: Nzakirwe mo kwehi, Kitabu Kibuya, Mo Kitabu ky’Obwami: Nzakirwe mo kwehi.",
+      "chorus": "  Nzakirwe mo kwehi, Kitabu Kibuya, Mo Kitabu ky’Obwami: Nzakirwe mo kwehi.",
       "verse2": "Ebibiy’aswe Mwami, Bingi ko museghe, Asa, Mwami, Nyeraye mo musasi wawe. Wabirilaghana kw’ebibi byetu byosi, Byamasos’omunyama, Wasyeryabyo kundu.",
       "verse3": "Omo Muyi Mubuya, N’enyumba nyibuya, N’ababuya bane mo, Bambity’obubuya. N’ebibi sibiri yo, By’eribihya eyo, Ho hali obuholo, Nzakirwe mo kwehi."
     }
@@ -957,7 +957,7 @@
     "musicKey": "Doh is Ab",
     "songLyric": {
       "verse1": "Haly’olubanza binemutondolwa, Twasyayira tuti kwehi? Twahik’emuliro gh’Omutsweri, Aban’ebyo twakola byosi.",
-      "chorus": "Erisuba mo: Twasyayira tuty’ekirw’ekyo? Twasyayira tuty’ekirw’ekyo? Twasyabya tunemuteya kwehi? Kutse twasyakindwa n’ebibi?.",
+      "chorus": "  Twasyayira tuty’ekirw’ekyo? Twasyayira tuty’ekirw’ekyo? Twasyabya tunemuteya kwehi? Kutse twasyakindwa n’ebibi?.",
       "verse2": "Syabiritsuk’omo babirihola, Syasyasa n’omo bali  ho, Twasyaleberibw’omo Masako, Ayo ni mulangiri wetu.",
       "verse3": "Twasyabugha tuti eky’omo mbanza, Ebitabu byasanzulwa; Mundu mundu abwiraw’ebiwe, Atawite omutongolya."
     }
@@ -970,7 +970,7 @@
     "musicKey": "Doh is Eb",
     "songLyric": {
       "verse1": "Omwami akabirikira, Atuhindanaye n’abuwe; Asyatweya ituli tuti: Ahw’asyasira.",
-      "chorus": "Erisuba mo: Mwana wa Tata we Asa, Nikw’Omwamy’asyasa, Twasyayira tuti kwehi? Omwami asa.",
+      "chorus": "  Mwana wa Tata we Asa, Nikw’Omwamy’asyasa, Twasyayira tuti kwehi? Omwami asa.",
       "verse2": "Twasyambalibwa asyombita, Omutongolya asingibwa, Twasyabya naye n’erikota, Ahw’asyasira.",
       "verse3": "Ngokw’eripalya asyaswasa, Nikwa asyakangya ebyosi; Asyakangy’ebyosi twakola, Ahw’asyasira.",
       "verse4": "Asyatsemer’Abana buwe, Bambal’embita yihenirye; Twamakinda twasyatsema yo, Ahw’asyasira.",
@@ -986,7 +986,7 @@
     "musicKey": "Doh is C",
     "songLyric": {
       "verse1": "Biba omo ngyakya, Embuto syowene; Ubibe mwitungi hik’omwigholo. Lindirira syere, N”erighesa lyahwa, Twasyatsema kundu, Tune n’engano.",
-      "chorus": "Erisuba mo: Mulety’engano, Mulety’engano, Twasyatsema kundu, Tune n’engano Mulety’engano, Mulety’engano, Twasyatsema kundu, Tune n’engano.",
+      "chorus": "  Mulety’engano, Mulety’engano, Twasyatsema kundu, Tune n’engano Mulety’engano, Mulety’engano, Twasyatsema kundu, Tune n’engano.",
       "verse2": "Bib’eryuba ryasa, Biba n’omo mbeho, Susagh’ekilumbi n’embeho nyingi. Erighesa ryahwa, n’emibiri yahwa, Twasyatsema kundu, Tune n’engano.",
       "verse3": "Twende tukalira, Tubibiry’Omwami; Twamabya n’obulighe bw’abahera. Kiro twasyakiranibwa n’Omukama, Twasyatsema kundu, Tune n’engano."
     }
@@ -999,7 +999,7 @@
     "musicKey": "Doh is Ab",
     "songLyric": {
       "verse1": "Omulenge gh’Omulisya, Akabirikira Eka; Kw’esyombuli syaherire, Mo buhyo ni ho syalwire.",
-      "chorus": "Erisuba mo: Ni mwase, ni mwase, Tusisonday’omo musitu, Ni mwase, ni mwase, Tusisubaye ku Yesu.",
+      "chorus": "  Ni mwase, ni mwase, Tusisonday’omo musitu, Ni mwase, ni mwase, Tusisubaye ku Yesu.",
       "verse2": "Tutabale Omulisya, Tusondaye esyatere, Tusisubay’omo buhyo, Ho syangabalir’émbeho.",
       "verse3": "Syamamir’omo  musitu, Syamahika omo ngwangwa; Omwamy’akababwir’ati: Musond’esyombuli syaghe."
     }
@@ -1012,7 +1012,7 @@
     "musicKey": "Doh is Bb",
     "songLyric": {
       "verse1": "Lamya ab’ebibi, lamy’abakoni ; Balusy’obulighe n’oluholo. Habul’abatere, Sumb’abawire, Babwire ko Yesu akalamya.",
-      "chorus": "Erisuba mo: Lamya ab’ebibi, lamy’abakoni Yesu Mughenyeri, Akalamya.",
+      "chorus": "  Lamya ab’ebibi, lamy’abakoni Yesu Mughenyeri, Akalamya.",
       "verse2": "Bamusekererya, Syalibaghana, Akalinda abatabuke. Bakune batsire, Ubasabire; Mo malighe asyababuyira.",
       "verse3": "Kung’abaherire, Munasesene ; Balek’engumbu y’ebitowene; Basule olwanzo, Bakole ndeke, Basub’oko Muhangiki wabo."
     }
@@ -1025,7 +1025,7 @@
     "musicKey": "Doh is Ab",
     "songLyric": {
       "verse1": "Ingye nyanzire Engulu, Yo ya Yesu Mukama; Eritula omwatsi, ghoyo wahol’oko muti. Ghoyo waly’omwisinda, Ghoyo kandisyahika, N’eritutwal’ewuwe, Aherihenia.",
-      "chorus": "Erisuba mo: Ingye nangatula gho, oko bihanda byosi, Olwanzo lwa Yesu Kristo, Mwami Oyo wetu.",
+      "chorus": "  Ingye nangatula gho, oko bihanda byosi, Olwanzo lwa Yesu Kristo, Mwami Oyo wetu.",
       "verse2": "Ingye nyanziry’omubiri, wa Yesu we Kalwari, Kusangwa mwanyilusya k’olubanza w’erihera. N’eririha ebibi, mwanyitongolya kundu, N’ekyo kyokyangatuma: Inamukolera.",
       "verse3": "Ingye nyanzir’éritula, Omwatsi gho’omusasi ; N’esyodudy’omo byala, N’eritum’omo lukanga. Mobyaghaly’Omukama, Oyo Mubuyirire, Kusangwa atwanzire, Wasingy’oku Yesu."
     }
@@ -1038,7 +1038,7 @@
     "musicKey": "Doh is Eb",
     "songLyric": {
       "verse1": "Neryo tulamaye abatere; Abatere hali ku Yesu. Tubahindule mo Ngulu Yiwe, Baminye k’Omwamy’abanzire.",
-      "chorus": "Erisuba mo: Tuye hosi (Tuye hosi) Tweghay’abandu bosi, Tuletere (Tuletere) Yesu baherire. Tuby’omo buhyo (Tuby’omo buhyo) By’Omulamya wetu Yesu wayiha oko b’ebibi.",
+      "chorus": "  Tuye hosi (Tuye hosi) Tweghay’abandu bosi, Tuletere (Tuletere) Yesu baherire. Tuby’omo buhyo (Tuby’omo buhyo) By’Omulamya wetu Yesu wayiha oko b’ebibi.",
       "verse2": "Tuletere Yesu abatere, Abolo bate n’akaghala. Bakangay’aho basyalamira, Baminye enzira y’Engebe.",
       "verse3": "Tughende ngoko Yes(u) atutuma, Tubye tunemumukolera. Lamy’abakoni, Sumb’abawire, Sondol’abatere ku Yesu."
     }
@@ -1051,7 +1051,7 @@
     "musicKey": "Doh is F",
     "songLyric": {
       "verse1": "Amalima erire ehosi ni ndambi y’erihulula, Lino ni ndambi y’erihulula Mukokoro n’oko bitwa.",
-      "chorus": "Erisuba mo: Mwami utume abaghesi tulame Mwami w’erikota, Batume bahindanay’amulo; Omughulu akine ho.",
+      "chorus": "  Mwami utume abaghesi tulame Mwami w’erikota, Batume bahindanay’amulo; Omughulu akine ho.",
       "verse2": "Ubatume omo ngyakya-ngyakya, Utume bo n’omw’itungi, N’endambi y’eryuba n’erirenga, Bahamule bayaghese.",
       "verse3": "Mughombe gh’Omwami, Yir’omuhwa hindanay’eby’erigheswa, Nerw’ekiro wasyabugh’ebyosi, Wasyatsemer’elubula."
     }
@@ -1064,7 +1064,7 @@
     "musicKey": "Doh is F",
     "songLyric": {
       "verse1": "Tukole n’omuhwa, tukolere Yesu, Tughende tukolere Omwami wetu; Kinywa kiwe ky’okikatuh’akaghala, Tuyiry’omuhwa mungi twikiriraye.",
-      "chorus": "Erisuba mo: Tukole, tukole, tukole, tukole, Tuminye, tusike, tulindirire Omwami,",
+      "chorus": "  Tukole, tukole, tukole, tukole, Tuminye, tusike, tulindirire Omwami,",
       "verse2": "Tukole n’omuhwa, lamy’abawirire, Sondol’abaluhire ah’erilama, N’erikangirirya Engulu Yowene, Tuyihalambire oko Musalaba.",
       "verse3": "Tukole n’omuhwa, Tuyabwir’abosi, Ko amami wa hisi akandisyahwa, Kandi Omwami asyapipwa n’abosi, Ababuya basyimbira erilama.",
       "verse4": "Tukole n’omuhwa, Omwamy’ase luba, Ekiro ky’erighesa kyamabihika. Tuy’elubula ew’ababirilama, Twasyabya n’erimba ko twabirilama."
@@ -1748,7 +1748,7 @@
     "musicKey": "Doh is F",
     "songLyric": {
       "verse1": "Musalaba wa Yesu, Nyikale hakuhi Eyo hali isoko, Yangalamy’ebibi.",
-      "chorus": "Erisuba mo: Hali musalaba, Musalaba wuwe, Oyo n’ipipa ryaghe, Omwibya ho ryosi.",
+      "chorus": "  Hali musalaba, Musalaba wuwe, Oyo n’ipipa ryaghe, Omwibya ho ryosi.",
       "verse2": "Hakuhi musalaba, Monatitimana, Lwanzo molwandangira, Molwanyibuyira.",
       "verse3": "Unyibuke Mulamya, Ngulangire eyo, Nyiban’olwanzo lwawe, n’erikulwa nalo.",
       "verse4": "Hakuhi, Musalaba, Nyimuyiketere, Riteya n’eririnda, Nasyikala eyo."
@@ -1774,7 +1774,7 @@
     "musicKey": "Doh is C",
     "songLyric": {
       "verse1": "Ekyangamba erimba ngapipa Omwami waghe, Nikwa nindi wangatok’erimba eripipwa rya Yesu.",
-      "chorus": "Erisuba mo: Olwanzo, lw’eriswekera, Olwanzo lwa Yesu, Olwanzo lw’eriswekera, Olwanzo lwa Yesu.",
+      "chorus": "  Olwanzo, lw’eriswekera, Olwanzo lwa Yesu, Olwanzo lw’eriswekera, Olwanzo lwa Yesu.",
       "verse2": "Ka yona butseme bwaghe, Ka yukanamb’obuholo, Mo bulighe n’omwaghalwa, Yesu yu kanambumulaya.",
       "verse3": "Yonaye ngayiketera, Erisyahabwa engebe, M’omwirimy’inyakolerya, Yesu yukanambumulaya."
     }
@@ -1787,7 +1787,7 @@
     "musicKey": "Doh is C",
     "songLyric": {
       "verse1": "Nyikwanzire, Mwami Yesu kwilaba ebyosi, Kusang’ukanzemesaya, Ni mbolere Mwami.",
-      "chorus": "Erisuba mo: Kinywa kyawe kyangatulwa (Kyatulwa), Eky’olwanzo lwawe, Kinywa kyawe kyangatulwa (Kyatulwa), Musasy’akeraya (Keraya).",
+      "chorus": "  Kinywa kyawe kyangatulwa (Kyatulwa), Eky’olwanzo lwawe, Kinywa kyawe kyangatulwa (Kyatulwa), Musasy’akeraya (Keraya).",
       "verse2": "Nyikwasi uli hakuhi, kwilab’ekihugho; Erikwibuka lyowene, Kwilaba erimba.",
       "verse3": "Kundu unyitsemesaye, Naghe nasyatsema, Namabya nyite n’olwanzo, Lwawe, ni buyira.",
       "verse4": "Byasyabya biti Mulamya, Erikala nawe, Nikw’omo kihugho kino, Tunatsemire kwehi?"
@@ -1801,7 +1801,7 @@
     "musicKey": "Doh is Eb",
     "songLyric": {
       "verse1": "Ahw’asyanzondola hose, Honasyatsemer’eriya, Kusangwa ingy’aholera, Mwangwira ate n’ekibi.",
-      "chorus": "Erisuba mo: Yesu kanzondola kundu, Nahik’ewuwe buholo, Kwali Yo Mwira nyanzire, Syali atambemukira.",
+      "chorus": "  Yesu kanzondola kundu, Nahik’ewuwe buholo, Kwali Yo Mwira nyanzire, Syali atambemukira.",
       "verse2": "Ngatsemer’eribya naye, Ngatsemer’erinzondola ; Ngatsemera erimowa, Kusangwa ingy’aholera.",
       "verse3": "Sinditikatika kundu, Ko ndi haghuma na Yesu, Nyinayiketere kundu, N asyamulolako Mwami."
     }
@@ -1814,7 +1814,7 @@
     "musicKey": "Doh is F",
     "songLyric": {
       "verse1": "Kihugho sinyanzir’ekyo, Ngasond’Omwami Yesu, Kihugho kikanyitebya, Yesu abuyirire.",
-      "chorus": "Erisuba mo: Lukogho ni lw’eriswekya, Lwanzo lute lulengo, Erilama eryoswire, Tubikirwe engebe.",
+      "chorus": "  Lukogho ni lw’eriswekya, Lwanzo lute lulengo, Erilama eryoswire, Tubikirwe engebe.",
       "verse2": "Kihugho sinyanzir’ekyo, Ngasond’Omwami Yesu, Mo bulighe bungi Iye, Ni lwimbo olubuya.",
       "verse3": "Kihugho sinyanzir’ekyo, Ngasond’Omwami Yesu, Mo lughendo lw’ekihugho, Kayo butseme bwaghe.",
       "verse4": "Kihugho sinyanzir’ekyo, Ngasond’Omwami Yesu, Musalaba nyikirirye, Ngasyalola ku Yesu."
@@ -1828,7 +1828,7 @@
     "musicKey": "Doh is D",
     "songLyric": {
       "verse1": "Twala engebe yaghe, Bisabo by’obutumbya, Twala ndambi sy’ekiro, Isyakupipa eyo.",
-      "chorus": "Erisuba mo: Nyeray’omo mumsasi wawe (Nyere kundu), Unyeraye kw’ebibi byosi (Nyere kundu), Ebyagh’ebyosi, Nyikutekere byo Lino n’endambi syosi.",
+      "chorus": "  Nyeray’omo mumsasi wawe (Nyere kundu), Unyeraye kw’ebibi byosi (Nyere kundu), Ebyagh’ebyosi, Nyikutekere byo Lino n’endambi syosi.",
       "verse2": "Twala ebyala nabyo, bikole eby’ukanza, Twala bisando byaghe, Mo busondoli bwawe.",
       "verse3": "Twal’omulenge waghe, Nyimbire Nyamuhanga, Twala n’eminywa yaghe, Yusul’ekinywa kyawe.",
       "verse4": "Twal’ezahabu nibya, N’ebyosi by’ekihugho, Twala n’amenge waghe, Ukole ko wanzire.",
@@ -1868,7 +1868,7 @@
     "musicKey": "Doh is Ab",
     "songLyric": {
       "verse1": "Mwami bye wawe, namabugha, Ngukwame, ngukwame, Ngole by’ukanza, Mwami waghe, Ungwatikaye.",
-      "chorus": "Erisuba mo: Mbye wawe (Mwami), Mbye wawe (Mwami), Eryo risonda lyaghe Mbye wawe (Mwami), Mbye wawe (Mwami), Mbye wawe Mwami lino.",
+      "chorus": "Mbye wawe (Mwami), Mbye wawe (Mwami), Eryo risonda lyaghe Mbye wawe (Mwami), Mbye wawe (Mwami), Mbye wawe Mwami lino.",
       "verse2": " Ebya hisi sinzomene byo, Neryo nyibye nawe, Byosi nyighambawe byo kundu, Ndi wawe nawe.",
       "verse3": "Nikwa obutsema bwa hisi, Wase tubye nawe, Ebinywa byo bikanzemesya, Bimbumulaye."
     }
@@ -1905,7 +1905,7 @@
     "musicKey": "Doh is Ab",
     "songLyric": {
       "verse1": "Ndim’olughendo lw’endate, Biro byosi ngahetuka, Ngasab’inyinemughenda, Mwami unyisondolere.",
-      "chorus": "Erisuba mo: Mwami unyisumb’endate, Ngwikiriray’elubula, Ndata kwilab’ekihugho, Mwami unyisondolere.",
+      "chorus": "  Mwami unyisumb’endate, Ngwikiriray’elubula, Ndata kwilab’ekihugho, Mwami unyisondolere.",
       "verse2": "Mweyo waghe kasyanzire, Rikala ahaly’obubi, Abandi banziry’ahisi, Risonda lyaghe n’iruka.",
       "verse3": "Ngasond’eriruk’endata, Sinyikindawe n’enzighu, Mw’ikirirya ngandisyowa, Mirenge y’abasyakinda.",
       "verse4": "Iruk’endata ngasonda, Inalola okw’ihenia, N’oko nduli nasyasaba, Mwami unyisondolere."
@@ -1919,7 +1919,7 @@
     "musicKey": "Doh is E",
     "songLyric": {
       "verse1": "S’ughan’erikol’omubiri w’Omwami, Yiteghekerania, Ughende ukole. Eyo Nyamuhanga kasond’ikutuma, Iwasyatsema yo mo mubiri wuwe.",
-      "chorus": "Erisuba mo: Ngasonda, wase sighughane, Ngasonda, ukoly’omibiri. S’ughan’erikol’omubiri w’Omwami Kwenene, kwenene, S’ukahiw’ewuwe.",
+      "chorus": "  Ngasonda, wase sighughane, Ngasonda, ukoly’omibiri. S’ughan’erikol’omubiri w’Omwami Kwenene, kwenene, S’ukahiw’ewuwe.",
       "verse2": "S’ughan’erikol’omubiri w’Omwami, Unemukola ki? Ukoly’omubiri. Righesa lyamera, Abake baghesa, Kangay’obutseme, Mw’ikoler’Omwami.",
       "verse3": "S’ughan’erikol’omubiri w’Omwami, Erighan’olwanzo, Kuwe ni buhanya. Ndambi y’olukogho, Yesu akasaba, Ikangay’ebibi, Bihw’omo lubula."
     }
@@ -1945,7 +1945,7 @@
     "musicKey": "Doh is A",
     "songLyric": {
       "verse1": "Unyirete hakuhi Tata, Unyibaghalire, Nyisegheray’oko kikuba, Ngasond’ilihuka.",
-      "chorus": "Erisuba mo: Unyirete hakuhi, (Nyase, unyirete hakuhi), Mo muliki w’olwanzo, (Muliki w’olwanzo). Unyirete (mo muliki w’olwanzo, unyirete hakuhi) Hakuhi nawe (Unyirete hakuhi).",
+      "chorus": "  Unyirete hakuhi, (Nyase, unyirete hakuhi), Mo muliki w’olwanzo, (Muliki w’olwanzo). Unyirete (mo muliki w’olwanzo, unyirete hakuhi) Hakuhi nawe (Unyirete hakuhi).",
       "verse2": "Unyirete Mulamya waghe, isitwaghabana, Ebyala byawe biri kwingye, Lino ndangire byo.",
       "verse3": "Unyirete m’omweyo wawe, Nyisosane nawe, Unyeraye, nyiluhukaye, Mbye mubuya kundu."
     }
@@ -1958,7 +1958,7 @@
     "musicKey": "Doh is D",
     "songLyric": {
       "verse1": "Ehosi na Yesu nyinemutsema, Eyakandwala Yesu ni butseme. Amabya ateho, sihatolere, Amabya ho Yesu Sinangubaha.",
-      "chorus": "Erisuba mo: Ehosi, Ehosi, Sinangubaha, Ehosi na Yesu naghenda naye.",
+      "chorus": "  Ehosi, Ehosi, Sinangubaha, Ehosi na Yesu naghenda naye.",
       "verse2": "Amabya ho Yesu sind’ingyowewe, Nomo nangaghanwa, Nomo ndi muke. Mwanganyisondol’omo nzira nyibi; Namabya na Yesu nasyamupipa.",
       "verse3": "Amabya ho Yesu mo nangaya to, Natok’eriluhuk’omw’ilubuka. Nyuma nasyaghend’ewuwe na kera, Amabya ho Yesu, Butsema kundu."
     }
@@ -1971,7 +1971,7 @@
     "musicKey": "Doh is D",
     "songLyric": {
       "verse1": "Mwira ulabe omo mwisi, Neryo sutime-time, Omuka mubuya w’endata, Akusondolere.",
-      "chorus": "Erisuba mo: S na A : Ghender’omo mwisi, Ghender’omo mwisi, Ghender’omo mwisi, Mwisi mubuya wa Yesu. T na B: Ghender’omo w’eriswekera wa Yesu, Ghender’omo w’eriswekera wa Yesu, Ghender’omo w’eriswekera wa Yesu, Omo w’akaka wa Yesu.",
+      "chorus": "  S na A : Ghender’omo mwisi, Ghender’omo mwisi, Ghender’omo mwisi, Mwisi mubuya wa Yesu. T na B: Ghender’omo w’eriswekera wa Yesu, Ghender’omo w’eriswekera wa Yesu, Ghender’omo w’eriswekera wa Yesu, Omo w’akaka wa Yesu.",
       "verse2": "Ghender’omo mwisi mubuya, Omo kinywa ky’Omwami, Asyakusondola na kera, Asyakolera ho.",
       "verse3": "Ughender’omo kyakakala, Ubye ukamukwama, Koleraya omo mwirimya, Hosi hahenaye.",
       "verse4": "Ghendera omo kyakakala, ‘Miny’olwanzo lwa Yesu, No kwanza abali ahisi, Neryo mwalamya bo."

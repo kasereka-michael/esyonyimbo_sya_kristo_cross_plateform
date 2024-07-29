@@ -1,7 +1,7 @@
 import { Colors } from '@/constants/Colors';
-import React from 'react';
-import { FlatList, StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
 import * as Clipboard from 'expo-clipboard';
+import React from 'react';
+import { Alert, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Background from './../../components/Background';
 import { useFontSize } from './../../components/FontSizeProvider'; // Adjust path as necessary
 import SongHeader from './../../components/SongHeader';

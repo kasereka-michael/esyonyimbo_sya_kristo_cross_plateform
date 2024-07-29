@@ -18,7 +18,7 @@ export default function CustomHeader() {
   return (
     <BlurView intensity={80} style={styles.headerContainer}>
       <View style={styles.innerContainer}>
-        <Ionicons name='menu' size={34} color={Colors.HEADER_TINT} style={{opacity:'hidden'}}/>
+        <Ionicons name='menu' size={5} color={Colors.HEADER_TINT} style={{opacity:'hidden'}}/>
         {isSearching ? (
           <TextInput
             style={styles.searchInput}
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     color: Colors.APP_BACKGROUND,
     borderBottomWidth: 1,
     borderBottomColor: Colors.APP_BACKGROUND,
-    marginHorizontal: wp('3%'),
+    marginHorizontal: wp('1%'),
     paddingVertical: hp('0.5%'),
   },
   searchBtn: {
