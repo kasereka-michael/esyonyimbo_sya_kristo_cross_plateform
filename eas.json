@@ -11,12 +11,12 @@
       "distribution": "internal"
     },
     "production": {
-      "distribution": "production"
+      "distribution": "internal"  
     }
   },
   "submit": {
     "production": {
-      "distribution": "production"
+     
     }
   }
 }
