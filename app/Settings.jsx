@@ -160,6 +160,7 @@ const Settings = () => {
                 <Text style={[styles.cardTitle, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>About</Text>
                 <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Developed by MUHINDO MBAVULIKIRA HERITIER</Text>
                 <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Phone: +243 829 267 467</Text>
+                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Lyrics written by KAKULE VIVALYA</Text>
                 <EmailLink/>
 
                 <ExpandableSection 
@@ -294,7 +295,7 @@ const styles = StyleSheet.create({
     
   },
   buttonText: {
-    marginTop: 20,
+    marginTop: 5,
     padding: 15,
     borderRadius: 10,
     backgroundColor: Colors.PRIMARY,
@@ -302,7 +303,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     color:Colors.APP_BACKGROUND,
-    
     borderRadius:20,
   },
   successMessage: {
@@ -312,7 +312,7 @@ const styles = StyleSheet.create({
     fontFamily:'outfit-medium',
   },
   modeButton: {
-    marginTop: 20,
+    marginTop: 5,
     padding: 15,
     borderRadius: 10,
     backgroundColor: Colors.PRIMARY,
@@ -347,7 +347,7 @@ const styles = StyleSheet.create({
     gap:30,
   },
   shareButton: {
-    marginTop: 20,
+    marginTop: 5,
     padding: 15,
     borderRadius: 10,
     backgroundColor: Colors.PRIMARY,
