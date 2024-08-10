@@ -24,7 +24,7 @@ export default function CustomHeader() {
             style={styles.searchInput}
             value={searchText}
             onChangeText={setSearchText}
-            placeholder="Erisonda..."
+            placeholder="Obusonderyo..."
             placeholderTextColor={Colors.APP_BACKGROUND}
           />
         ) : (
