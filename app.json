@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "SDA_YIRA_SONGS_APP",
-    "slug": "SDA_YIRA_SONGS_APP",
+    "name": "ESYONYIMBO SYA KRISTO",
+    "slug": "ESYONYIMBO SYA KRISTO",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "yira.example.user.nandehymnalebook"
+      "package": "yira.example.user.nandehymnalebook",
+      "permissions": ["READ_EXTERNAL_STORAGE","ACCESS_FINE_LOCATION"]
     },
     "web": {
       "bundler": "metro",

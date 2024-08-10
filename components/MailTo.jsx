@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text, TouchableOpacity, Linking, StyleSheet, useColorScheme } from 'react-native';
-import Colors from './../constants/Colors' // Adjust the import to your Colors file
+import { Linking, StyleSheet, Text, TouchableOpacity, useColorScheme } from 'react-native';
 
 const EmailLink = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -11,7 +10,7 @@ const EmailLink = () => {
 
   return (
     <TouchableOpacity onPress={handlePress}>
-      <Text style={[styles.subText, { color: isDarkMode ? '#f2f2f' : '#0f0f' }]}>
+      <Text style={[styles.subText, { color: isDarkMode ? '#000' : '#0b0' }]}>
         Email: esyonyimbosyakristo@gmail.com
       </Text>
     </TouchableOpacity>
@@ -22,6 +21,7 @@ const styles = StyleSheet.create({
   subText: {
     fontSize: 16,
     marginBottom: 5,
+    color:'#000',
     fontFamily:'outfit-medium',
   },
 });

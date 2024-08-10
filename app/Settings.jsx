@@ -4,7 +4,7 @@ import Slider from '@react-native-community/slider';
 import { useEffect, useState } from 'react';
 import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import Background from '../components/Background';
-import EmailLink from '../components/MailTo'
+import EmailLink from '../components/MailTo';
 
 const ExpandableSection = ({ title, content }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -182,6 +182,7 @@ const Settings = () => {
                   • Dr NATHANIEL MUMBERE WALEMBA 
                   • FISTON SAHIKA 
                   • MAPENDO SIVIHWA 
+                  • ESDRAS KABUNDA 
                   • Dr MUNAKENYA 
                   • PASCANET STUDIOZ 
                   • ISAAC MWENDAMBIYO"
@@ -219,6 +220,7 @@ const styles = StyleSheet.create({
   scrollView: {
     flexGrow: 1,
     padding: 20,
+    backgroundColor:Colors.APP_BACKGROUND,
   },
   container: {
     flex: 1,

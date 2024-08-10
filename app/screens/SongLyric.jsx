@@ -1,4 +1,5 @@
 import { Colors } from '@/constants/Colors';
+import { Ionicons } from '@expo/vector-icons';
 import * as Clipboard from 'expo-clipboard';
 import React from 'react';
 import { Alert, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -6,7 +7,7 @@ import Background from './../../components/Background';
 import { useFontSize } from './../../components/FontSizeProvider';
 import SongHeader from './../../components/SongHeader';
 
-const SongLyric = ({ route }) => {
+const SongLyric = ({ route, navigation }) => {
   const { item } = route.params;
   const { fontSize }  = useFontSize(); 
 
@@ -15,7 +16,7 @@ const SongLyric = ({ route }) => {
     Alert.alert("Copied to Clipboard", "The verse has been copied to your clipboard.");
   };
 
-  const renderVerse = ({ item: verse, index }) => (
+  const renderVerse = ({ item: verse }) => (
     <TouchableOpacity 
       onLongPress={() => copyToClipboard(verse.content)}
       style={styles.verseContainer}
@@ -27,9 +28,9 @@ const SongLyric = ({ route }) => {
       {item.songLyric.chorus && (
         <View style={styles.chorusContainer}>
           <Text style={[styles.lyricTitle, { fontSize: Colors.FONTSIZELYRIC + 2 }]}>
-            Chorus:
+            Erisuba mo:
           </Text>
-          <Text style={[styles.lyrics, { fontSize: Colors.FONTSIZELYRIC }]}>{item.songLyric.chorus}</Text>
+          <Text style={[styles.chorus, { fontSize: Colors.FONTSIZELYRIC }]}>{item.songLyric.chorus}</Text>
         </View>
       )}
     </TouchableOpacity>
@@ -43,11 +44,20 @@ const SongLyric = ({ route }) => {
       content,
     }));
 
+  const goToHome = () => {
+    navigation.navigate('Home'); 
+  };
+
   return (
     <Background>
       <View style={styles.container}>
         <View style={styles.headerContent}>
-          <Text style={[styles.id, { fontSize: fontSize }]}>{`No: ${item.id}`}</Text>
+          <View style={styles.numberAndbtnback}>
+            <Text style={[styles.id, { fontSize: fontSize }]}>{`No: ${item.id}`}</Text>
+            <TouchableOpacity onPress={goToHome}>
+              <Ionicons name="list" size={25} color={Colors.GRAY} />
+            </TouchableOpacity>
+          </View>
           <Text style={[styles.title, { fontSize: fontSize + 4 }]}>
             {item.title}
           </Text>
@@ -65,14 +75,13 @@ const SongLyric = ({ route }) => {
         <FlatList
           data={verses}
           renderItem={renderVerse}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(verse) => verse.id}
           contentContainerStyle={styles.lyricsContainer}
         />
       </View>
     </Background>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -135,6 +144,17 @@ const styles = StyleSheet.create({
     fontFamily: 'outfit-regular',
     fontSize: Colors.FONTSIZELYRIC,
   },
+  chorus: {
+    color: Colors.TEXT_PRIMARY,
+    fontSize:Colors.FONTSIZELYRIC,
+    fontStyle: 'italic',
+    fontFamily: 'outfit-regular',
+  },
+  numberAndbtnback:{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-between',
+  }
 });
 
 export default SongLyric;
