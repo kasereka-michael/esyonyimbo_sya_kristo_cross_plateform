@@ -396,10 +396,10 @@
         "churchHymnalNumber": "CH 50",
         "musicKey": "Doh is Eb",
         "songLyric": {
-          "verse1": "Ubye netu n’akaghala kwe, Netu sitwangubaha Sitani, Mo mwirimya w’ekihugho kino, Wangabya luseke lwetu, Kristo.",
-          "verse2": "Ubye netu n’erihenia lyawe, Biro ni bike eby’ekihugho, N’Abandu bangabindu luba, Uwe w’Erikota, Ubye netu.",
-          "verse3": "Unye netu emighulu yosi, Nindi angatulamya kw’ebibi? Nindi angatuhangania nga We? Tukayiketera We Mukama.",
-          "verse4": "Ubye netu, Tata w’Erikota ; Tughaniray’oluholo lwawe, Tukulinde k’omubiri wawe, Yesu Mulamiya, ubye netu."
+          "verse1": "Ubye nethu n’akaghala kwe, Netu sitwangubaha Sitani, Mo mwirimya w’ekihugho kino, Wangabya luseke lwetu, Kristo.",
+          "verse2": "Ubye nethu n’erihenia lyawe, Biro ni bike eby’ekihugho, N’Abandu bangabindu luba, Uwe w’Erikota, Ubye netu.",
+          "verse3": "Unye nethu emighulu yosi, Nindi angatulamya kw’ebibi? Nindi angatuhangania nga We? Tukayiketera We Mukama.",
+          "verse4": "Ubye nethu, Tata w’Erikota ; Tughaniray’oluholo lwawe, Tukulinde k’omubiri wawe, Yesu Mulamiya, ubye netu."
         }
       },
       {
@@ -639,8 +639,8 @@
     "musicKey": "Doh is G",
     "songLyric": {
       "verse1": "Indy’oko musike w’e Yordani, Nasumba ameso, Ndangir’ekihugho kye Kanani, Aho ho byaghe biri.",
-      "chorus": "  Kihugho kibuya ky’obuholo, Yisiry’oko musike aboyire, Twasyimbira ho esyonyimbo sya Musa; Eribya na Yesu Kristo.",
-      "verse2": "Eyisiry’oko mukokoro, Hali ekyakakala, Yesu Kristo asyaby’ekyakaka kyahighahw’ekiro.",
+      "chorus": "Kihugho kibuya ky’obuholo, Yisiry’oko musike abuyirire, Twasyimbira ho esyonyimbo sya Musa; Eribya na Yesu Kristo.",
+      "verse2": "Eyisiry’oko mukokoro, Hali ekyakakala, Yesu Kristo asyaby’ekyakakala kyahighahw’ekiro.",
       "verse3": "Aho howene nasyahikey’ekiro kyahi kwehi, Nasyalangira Tat’omo meso, omo Bwami buwe.",
       "verse4": "Nyitsemire omo mutima, Sinyanzir’eryubaha, Yorodani ikahuha ndeke, Sindyubah’erisoka."
     }
