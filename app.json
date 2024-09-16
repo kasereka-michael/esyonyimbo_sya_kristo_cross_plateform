@@ -2,12 +2,12 @@
   "expo": {
     "name": "ESYONYIMBO SYA KRISTO",
     "slug": "SDA_YIRA_SONGS_APP",
-    "version": "1.0.0",
+    "version": "1.2.6",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "assetBundlePatterns": [
-      "assets/**/*"
+      "**/*"
     ],
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -19,11 +19,12 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "yira.example.user.nandehymnalebook",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "yira.example.user.nandehymnalebook",
       "permissions": ["READ_EXTERNAL_STORAGE","ACCESS_FINE_LOCATION"]
     },
     "web": {
