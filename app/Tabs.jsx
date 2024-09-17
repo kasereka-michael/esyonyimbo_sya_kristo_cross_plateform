@@ -34,6 +34,7 @@ const Tabs = () => {
           component={HomeScreen}
           options={{
             tabBarIcon: ({ color }) => <Ionicons name="list" size={25} color={color} />,
+            tabBarLabel:"OMUKYA",
             header: () => <CustomHeader />,
             lazy: true
           }}
@@ -42,13 +43,12 @@ const Tabs = () => {
           name="Favorites"
           component={Favorites}
           options={{
-            tabBarIcon: ({ color }) => <Fontisto name="heart" size={25} color={color} />,
+            tabBarIcon: ({ color }) => <Fontisto name="heart" size={20} color={color} />,
             tabBarLabel:"ESYANZIRWE",
             header: () => 
             <View style={styles.headerContainer}>
                  <Text style={styles.headerTitle}>ESYANZIRWE</Text>
             </View>,
-            
             lazy: true
 
           }}
@@ -57,7 +57,8 @@ const Tabs = () => {
           name="Settings"
           component={Settings}
           options={{
-            tabBarIcon: ({ color }) => <Ionicons name="settings" size={25} color={color} />,
+            tabBarIcon: ({ color }) => <Ionicons name="settings" size={22} color={color} />,
+            tabBarLabel:"",
             header: () =>null,
             lazy: true
           }}
@@ -77,9 +78,8 @@ const styles = StyleSheet.create({
     paddingBottom: 0, 
   },
   tabBarLabel: {
-    fontSize: 14,
+    fontSize: 10,
     fontWeight: 'bold',
-    display: 'none',
   },
   headerTitle: {
     fontSize: 20,
