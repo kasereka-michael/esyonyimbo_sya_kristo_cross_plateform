@@ -11,7 +11,6 @@ import HomeScreen from './Home';
 import Settings from './Settings';
 
 
-
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
@@ -58,7 +57,7 @@ const Tabs = () => {
           component={Settings}
           options={{
             tabBarIcon: ({ color }) => <Ionicons name="settings" size={22} color={color} />,
-            tabBarLabel:"",
+            tabBarLabel:"EBIHOLHO",
             header: () =>null,
             lazy: true
           }}

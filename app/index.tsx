@@ -1,5 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import * as Font from 'expo-font'; // Using `* as Font` for convenience
+import { NavigationContainer } from '@react-navigation/native';
+import * as Font from 'expo-font'; // Using * as Font for convenience
 import React, { useEffect, useState } from 'react';
 import Tabs from './Tabs';
 import { FontSizeProvider } from './../components/FontSizeProvider';
