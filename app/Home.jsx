@@ -4,7 +4,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import React, { memo, useCallback, useEffect, useState } from 'react';
 import { FlatList, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import HymnalData from '../assets/data/lyrics.json';
 import Background from '../components/Background';
@@ -89,7 +88,7 @@ const HomeScreen = () => {
 
   return (
     <Background>
-      <StatusBar barStyle="dark-content" backgroundColor="transparent" />
+      
       <SafeAreaView style={styles.container}>
         <FlatList
           data={filteredData.length ? filteredData : HymnalData}

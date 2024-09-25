@@ -6,7 +6,6 @@ import { BlurView } from 'expo-blur';
 import { debounce } from 'lodash';
 import React, { useCallback, useState } from 'react';
 import { FlatList, Platform, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import Background from '../components/Background';
 
@@ -87,12 +86,12 @@ const Favorite = () => {
 
   return (
     <Background>
-      <StatusBar barStyle="dark-content" backgroundColor="transparent" />
+     
       <SafeAreaView style={styles.container}>
         <View style={styles.content}>
-          <BlurView intensity={80} style={styles.headerContainer}>
+          <View style={styles.headerContainer}>
               <Text style={styles.headerTitle}>ESYANZIRWE</Text>
-          </BlurView>
+          </View>
           {favoriteSongs.length === 0 ? (
             <Text style={styles.noDataText}>No favorite songs added yet.</Text>
           ) : (
@@ -116,6 +115,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    
   },
   list: {
     flexGrow: 1,
@@ -125,17 +125,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: "#fff",
     height: hp(8),
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+    color:"#000",
+    // paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   headerTitle: {
-    fontSize: wp('4%'),
+    fontSize: wp('5%'),
     fontWeight: 'bold',
-    textAlign: 'center',
-    fontFamily: 'outfit-medium',
-    color: Colors.APP_BACKGROUND,
-    display:'none',
+    fontFamily: Platform.select({
+      ios: 'Helvetica',
+      android: 'Roboto',
+      default: 'sans-serif',
+    }),
+    // display: 'none',
+    color:"#000",
   },
   item: {
     flexDirection: 'row',

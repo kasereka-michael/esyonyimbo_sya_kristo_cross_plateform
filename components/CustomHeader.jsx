@@ -18,7 +18,13 @@ export default function CustomHeader() {
   return (
     <BlurView intensity={80} style={styles.headerContainer}>
       <View style={styles.innerContainer}>
-        <Ionicons name='menu' size={5} color={Colors.HEADER_TINT} style={{opacity:'hidden'}}/>
+        {/* Icon with valid size and opacity */}
+        <Ionicons
+          name='menu'
+          size={28}
+          color={Colors.HEADER_TINT}
+          style={styles.menuIcon}
+        />
         {isSearching ? (
           <TextInput
             style={styles.searchInput}
@@ -30,8 +36,16 @@ export default function CustomHeader() {
         ) : (
           <Text style={styles.headerTitle}>ESYONYIMBO SYA KRISTO</Text>
         )}
-        <TouchableOpacity onPress={isSearching ? handleCancelPress : handleSearchPress} style={styles.searchBtn}>
-          <Ionicons name={isSearching ? "close" : "search"} size={24} color={Colors.APP_BACKGROUND} style={styles.searchIcon}/>
+        <TouchableOpacity
+          onPress={isSearching ? handleCancelPress : handleSearchPress}
+          style={styles.searchBtn}
+        >
+          <Ionicons
+            name={isSearching ? "close" : "search"}
+            size={24}
+            color={Colors.APP_BACKGROUND}
+            style={styles.searchIcon}
+          />
         </TouchableOpacity>
       </View>
     </BlurView>
@@ -43,10 +57,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: Platform.OS === 'android' || Platform.OS === 'ios' ? "#ffff" : "transparent",
     height: hp(8),
     paddingHorizontal: wp('4%'),
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   innerContainer: {
     flexDirection: 'row',
@@ -57,8 +70,12 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: wp('5%'),
     fontWeight: 'bold',
-    fontFamily: 'outfit-medium',
-    color: Colors.APP_BACKGROUND,
+    fontFamily: Platform.select({
+      ios: 'Helvetica',
+      android: 'Roboto',
+      default: 'sans-serif',
+    }),
+    color:"#000",
   },
   searchInput: {
     flex: 1,
@@ -68,6 +85,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.APP_BACKGROUND,
     marginHorizontal: wp('1%'),
     paddingVertical: hp('0.5%'),
+    color:"#000",
   },
   searchBtn: {
     padding: wp('2%'),
@@ -78,5 +96,9 @@ const styles = StyleSheet.create({
   },
   searchIcon: {
     color: Colors.APP_BACKGROUND,
+  },
+  menuIcon: {
+   
+    opacity: Platform.OS === 'android' || Platform.OS === 'ios' ? 0.01 : 0.1, // Adjust for platforms
   },
 });

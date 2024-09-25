@@ -42,12 +42,13 @@ const Tabs = () => {
           name="Favorites"
           component={Favorites}
           options={{
-            tabBarIcon: ({ color }) => <Fontisto name="heart" size={20} color={color} />,
+            tabBarIcon: ({ color }) => <Fontisto name="heart" size={22} color={color} />,
             tabBarLabel:"ESYANZIRWE",
-            header: () => 
-            <View style={styles.headerContainer}>
-                 <Text style={styles.headerTitle}>ESYANZIRWE</Text>
-            </View>,
+            header: () => {},
+            // <View style={styles.headerContainer}>
+            //      <Text style={styles.headerTitle}>ESYANZIRWE</Text>
+            // </View>,
+            
             lazy: true
 
           }}
@@ -56,7 +57,7 @@ const Tabs = () => {
           name="Settings"
           component={Settings}
           options={{
-            tabBarIcon: ({ color }) => <Ionicons name="settings" size={22} color={color} />,
+            tabBarIcon: ({ color }) => <Ionicons name="settings" size={25} color={color} />,
             tabBarLabel:"EBIHOLHO",
             header: () =>null,
             lazy: true
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   tabBar: {
-    height: hp(4),
+    height: hp(6),
     paddingBottom: 0, 
   },
   tabBarLabel: {
@@ -84,13 +85,14 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     fontFamily: 'outfit-medium',
-    color: Colors.APP_BACKGROUND,
+    color:'#000',
+    // display: 'none',
   },
   headerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: '#fff',
     height: hp(8),
     paddingHorizontal: 10,
   }

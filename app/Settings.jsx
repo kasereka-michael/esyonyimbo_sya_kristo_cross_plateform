@@ -158,9 +158,9 @@ const Settings = () => {
 
               <View style={styles.card}>
                 <Text style={[styles.cardTitle, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>About</Text>
-                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Developed by MUHINDO MBAVULIKIRA HERITIER</Text>
+                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Developer: MUHINDO MBAVULIKIRA HERITIER</Text>
                 <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Phone: +243 829 267 467</Text>
-                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Lyrics written by KAKULE VIVALYA</Text>
+                <Text style={[styles.subText, { color: isDarkMode ? Colors.LIGHT_TEXT : Colors.DARK_TEXT }]}>Lyrics: KAKULE VIVALYA</Text>
                 <EmailLink/>
 
                 <ExpandableSection 
